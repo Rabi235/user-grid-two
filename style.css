@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(28, 212, 170, 1);
+    min-height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile {
+    margin: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.user-profile .item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+    transition: all 200ms ease;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.user-profile .item:hover {
+    cursor: pointer;
+    background-color: rgb(255, 212, 200);
+}
+
+.user-profile .item .top {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-profile .item .top .menu-dots {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ .user-profile .item .top img {
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+} 
+.user-profile .item .stats {
+    display: flex;
+    padding: 1rem 2rem;
+    gap: 3rem;
+}
+
+.user-profile .item .stats p:first-child {
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .user-profile {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 590px) {
+    body {
+        background: linear-gradient(180deg, rgba(28, 212, 170, 1) 20%, rgba(255, 255, 255, 1) 20%);
+    }
+    .user-profile {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
